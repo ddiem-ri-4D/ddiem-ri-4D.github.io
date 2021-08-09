@@ -1,12 +1,22 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "About/Contact"
+    url: /about/
+  - title: "Machine learning"
+    url: /machine-learning/
+  - title: "Knowledge Graph"
+    url: /knowledge-graph/
+  - title: "NLP"
+    url: /nlp/
+  - title: "Visual Data Science"
+    url: /vds/
+  - title: "Math"
+    url: /math/
+  - title: "Programming"
+    url: /programming/
+  - title: "Publications"
+  #  url: /programming/
+  - title: "Talks"
+  #  url: /programming/
+  - title: "Teaching"
+  #  url: /programming/
