@@ -2,7 +2,7 @@
 main:
   - title: "About/Contact"
     url: /about/
-  - title: "Machine learning"
+  - title: "Machine Learning"
     url: /machine-learning/
   - title: "Knowledge Graph"
     url: /knowledge-graph/
@@ -15,8 +15,10 @@ main:
   - title: "Programming"
     url: /programming/
   - title: "Publications"
-  #  url: /programming/
+  #  url: /publications/
   - title: "Talks"
-  #  url: /programming/
+  #  url: /talks/
   - title: "Teaching"
-  #  url: /programming/
+  #  url: /teaching/
+  - title: "Projects"
+  #  url: /projects/
