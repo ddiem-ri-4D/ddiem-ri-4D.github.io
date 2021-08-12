@@ -11,11 +11,15 @@ comments: true
 
 <p><img style="float: left;margin:5px 20px 5px 1px" src="{{site.baseurl}}/assets/images/avt/avt.jpg" width="200px"></p>
 
-Hi! I'm currently as a student who goes by the full name is Le Nhut Nam (with Vietnamese format). I lived in Vietnam since I was born, for studying I'm now living in Ho Chi Minh City, for three years.
+Hi! I'm currently as a student who goes by the full name is **Le Nhut Nam** (with Vietnamese format). I lived in Vietnam since I was born, for studying I'm now living in Ho Chi Minh City, for three years.
 
-My background is Computer Science at Ho Chi Minh University of Science, VNU (HCMUS), before go to there for my learning, I used to live in home town - Tayninh, for a long time in my childhood. In my past, I studied at Hoang Le Kha High School For the Gifted student from 2015 to 2018, non-specialized class, major in A-Group (Nature Science Group include Math, Physic and Chemistry subject).
+**My background** is Computer Science at Ho Chi Minh University of Science, VNU (HCMUS), before go to there for my learning, I used to live in home town - Tayninh, for a long time in my childhood. In my past, I studied at Hoang Le Kha High School For the Gifted student from 2015 to 2018, non-specialized class, major in A-Group (Nature Science Group include Mathematics, Physics and Chemistry).
 
-Currently, I'm focusing on research **Graph Theory**, **Graph Convolution Neural Networks** and **Complex Networks**. In addition, at my university, I have learned a lot of interesting subjects such as Machine Learning, Recognition, Multivariate Statistical Analysis, etc. 
+Currently, I'm focusing on research **Graph Theory**, **Graph Convolution Neural Networks** and **Complex Networks**. In addition, at my university, I have learned a lot of interesting subjects such as Machine Learning, Recognition, Multivariate Statistical Analysis, etc.
+
+My **strong points** are flexibity, focused and continuous learning. In my works, I always foucsing to get the highest results that I can. But some way, like any people who live on the Earth, I also have some **weak points**, include public speaking and presentation skills.
+
+**My goal for my future** is become Computer Scientist, get Master Degree in Computer Science, and for long term plan, get PhD in Computer Science.
 
 <p><img style="float: right;margin:5px 20px 5px 1px" src="https://wallpapercave.com/wp/wp8540750.jpg" width="200px"></p>
 

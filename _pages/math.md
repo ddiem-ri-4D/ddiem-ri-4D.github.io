@@ -11,7 +11,7 @@ toc: true
 
 ## Nhập môn Thống kê
 
-- Lý thuyết tập hợp
+- [Lý thuyết tập hợp](/content/math/introduction_to_statistical/chapter_1_set_theory)
 - Lý thuyết xác suất
 - Lý thuyết biến ngẫu nhiên
 - Một số phân phối thường gặp
@@ -64,25 +64,25 @@ toc: true
 
 ### Hồi quy tuyến tính đa biến - Linear Regression
 
-- [Multiple Linear Regression](/msa/linear_regression/multiple_linear_regression)
-- [Multivariate Linear Regression](/msa/linear_regression/multivariate_linear_regression)
-- [Logistic Regression](/msa/linear_regression/logistic_regression)
+- [Multiple Linear Regression](/content/msa/linear_regression/multiple_linear_regression)
+- [Multivariate Linear Regression](/content/msa/linear_regression/multivariate_linear_regression)
+- [Logistic Regression](/content/msa/linear_regression/logistic_regression)
 
-### [Phân tích thành phần chính - PCA](/msa/pca/principal_components_analysis)
+### [Phân tích thành phần chính - PCA](/content/msa/pca/principal_components_analysis)
 
 - Động lực nghiên cứu khoa học và phát biểu bài toán
 - Thành phần chính quần thể (Population principal components)
 - Thành phần mẫu (Sample principal components)
 - Ứng dụng (Applications of principal components)
 
-### [Phân tích dữ kiện - FA](/msa/fa/factor_analysis)
+### [Phân tích dữ kiện - FA](/content/msa/fa/factor_analysis)
 
 - Động lực nghiên cứu khoa học và phát biểu bài toán
 - Mô hình
 - Oblique Factor Model
 - Confirmatory Factor Analysis
 
-### [Phân tích tương quan chính tắc - CCA](/msa/cca/canonical_correlation_analysis)
+### [Phân tích tương quan chính tắc - CCA](/content/msa/cca/canonical_correlation_analysis)
 
 - Động lực nghiên cứu khoa học và phát biểu bài toán
 
@@ -96,7 +96,7 @@ toc: true
 - Phân lớp nhiều quần thể
 - Phương pháp Fisher cho việc phân lớp nhiều quần thể
 - So sánh Minimum ECM/TPM và Linear Discriminant Analysis
-- Discriminant Analysis bằng tiếp cận Giải tích
+- [Discriminant Analysis bằng tiếp cận Giải tích](/content/msa/classification/lda_calculus)
 - Bayes Classifiers
 - Classification trees
 - Support Vector Machines

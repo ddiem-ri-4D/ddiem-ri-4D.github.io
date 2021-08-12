@@ -27,14 +27,14 @@ toc: true
     - Mô hình tuyến tính II
     - Neural Networks
 - Chủ đề 03: Làm thế nào để máy tính học tốt?
-    - Overfitting
+    - Over-fitting
     - Regularization
     - Validation
     - Support Vector Machine
 
-- Máy học hiện đại: Aftificial Neural Networks
+- Máy học hiện đại: Artificial Neural Networks
 - Máy học hiện đại: Deep Neural Networks
-- Máy học hiện đại: Convolutional Neural Networks
+- Máy học hiện đại: Convolutiona Neural Networks
 - Máy học hiện đại: Recurrent Neural Networks
 - Máy học hiện đại: Attention Mechanisms
 - Máy học hiện đại: Deep Generative Models
@@ -148,6 +148,24 @@ toc: true
 
 ### Chap 18: High-Dimensional Problem
 
+## Mathematics for Machine Learning
+
+Một vài ghi chú từ sách Mathematics for Machine Learning
+
+### Linear Algebra
+
+### Analytic Geometry
+
+### Matrix Decomposition
+
+### Vector Calculus
+
+### Probability and Distributions
+
+### Continuous Optimization
+
+## Mathematics for Data Visualization
+
 ## Tài liệu tham khảo
 
 - \[1\] Machine Learning Coursera - Andrew Ng
@@ -156,4 +174,4 @@ toc: true
 - \[4\] Khoa học dữ liệu - Khanh's Blog
 - \[5\] Python implementation of algorithms from Russell And Norvig's "Artificial Intelligence - A Modern Approach"
 - \[6\] Christopher Olah's Blog
-- \[7\] [Khoa Học Dữ Liệu Blog](https://khoahocdulieu.github.io/home){:target="_blank"} - Giáo sư Nhật, giáo sư về khoa học dữ liệu, học máy, và thống kê tại đại học Texas tại Austin 
+- \[7\] [Khoa Học Dữ Liệu Blog](https://khoahocdulieu.github.io/home){:target="_blank"} - Giáo sư Nhật, giáo sư về khoa học dữ liệu, học máy, và thống kê tại đại học Texas tại Austin
