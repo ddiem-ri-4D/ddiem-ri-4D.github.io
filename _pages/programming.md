@@ -46,3 +46,26 @@ c) Graph Algorithms
 ## Topics in C++ Programming
 
 ## Articles
+
+
+## References
+
+- Youtube Channel: [javidx9](https://www.youtube.com/c/javidx9/featured)
+- Youtube Channel: [Cᐩᐩ Weekly With Jason Turner](https://www.youtube.com/channel/UCxHAlbZQNFU2LgEtiqd2Maw)
+- GNU Bash: [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
+- r/bash: [https://www.reddit.com/r/bash/](https://www.reddit.com/r/bash/)
+- r/commandline: [https://www.reddit.com/r/commandline/](https://www.reddit.com/r/commandline/)
+- Learn Shell: [https://www.learnshell.org/](https://www.learnshell.org/)
+- Emacs Lisp: [https://www.gnu.org/software/emacs/manual/html_node/elisp/](https://www.gnu.org/software/emacs/manual/html_node/elisp/)
+- Learn Elisp in Y Minutes: [https://learnxinyminutes.com/docs/elisp/](https://learnxinyminutes.com/docs/elisp/)
+- r/Lisp: [https://www.reddit.com/r/lisp/](https://www.reddit.com/r/lisp/)
+- askell.org: [http://www.haskell.org](http://www.haskell.org)
+- Hoogle: [https://hoogle.haskell.org/](https://hoogle.haskell.org/)
+- r/haskell: [https://www.reddit.com/r/Python/](https://www.reddit.com/r/Python/)
+- Haskell on StackExchange: [https://stackoverflow.com/questions/tagged/haskell](https://stackoverflow.com/questions/tagged/haskell)
+- Python.org: [https://www.python.org/](https://www.python.org/)
+- r/Python: [https://www.reddit.com/r/Python/](https://www.reddit.com/r/Python/)
+- Python on StackExchange: [https://stackoverflow.com/questions/tagged/python](https://stackoverflow.com/questions/tagged/python)
+- Vim.org: [https://www.vim.org/](https://www.vim.org/)
+- r/Vim: [https://www.reddit.com/r/vim/](https://www.reddit.com/r/vim/)
+- Vi/m StackExchange: [https://vi.stackexchange.com/](https://vi.stackexchange.com/)
