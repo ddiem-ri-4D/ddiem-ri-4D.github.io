@@ -855,3 +855,7 @@ Gọi $\mathbf{A} \in \mathbb{R}^{n \times n}$ là một ma trận đối xứng
 $$
 \mathbf{x}^T\mathbf{A}\mathbf{x} = \sum_{i=1}^n\sum_{j=1}^nA_{ij}x_ix_j
 $$
+
+## Tài liệu gốc
+
+\[1\] [Garrett Thomas. Department of Electrical Engineering and Computer Sciences. University of California, Berkeley. "Mathematics for Machine Learning", January 11, 2018](https://gwthomas.github.io/docs/math4ml.pdf)
