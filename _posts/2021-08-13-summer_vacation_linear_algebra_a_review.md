@@ -31,13 +31,15 @@ Không gian Vector là cơ sở trong việc hình thành Đại số tuyến t�
 Một tập hợp các vector $v_1, v_2, ..., v_n \in V$ được gọi là độc lập tuyến tính (**linearly independent**) nếu
 
 $$
-\alpha_1v_1 + \alpha_2v_2 + ... + \alpha_nv_n = 0 \text{  kéo theo } $\alpha_1 = \alpha_2 = ... = \alpha_n$
+\alpha_1v_1 + \alpha_2v_2 + ... + \alpha_nv_n = 0 \text{  kéo theo }\\ \alpha_1 = \alpha_2 = ... = \alpha_n
 $$
 
 Bao (span) của $v_1, v_2, ..., v_n \in V$ là tập hợp tất cả những vector mà có thể được thể hiện bằng sự tổ hợp tuyến tính của chúng
 
 $$
-span\{v_1, v_2, ..., v_n\} = \{v\in V: \exists \alpha_1, \alpha_2, ..., \alpha_n \text{ mà } \alpha_1v_1 + \alpha_2v_2 + ... + \alpha_nv_n = v\}
+\begin{gather}
+span\{v_1, v_2, ..., v_n\} = \\ \{v\in V: \exists \alpha_1, \alpha_2, ..., \alpha_n \text{ mà } \alpha_1v_1 + \alpha_2v_2 + ... + \alpha_nv_n = v\}
+\end{gather}
 $$
 
 Nếu một tập hợp những vector là độc lập tuyến tính (linearly independent) và bao (span) của nó là toàn bộ V, những vector này được gọi là một **cơ sở** (**basis**) của V. Một cách tổng quát, mọi tập vector độc lập tuyến tính đều tạo thành cơ sở cho bao của nó
@@ -345,7 +347,41 @@ $$
 
 mà kéo theo $\mathbf{v}_{\perp} \in S^{\perp}$
 
+Còn tiếp ....
 
+**Mệnh đề 2** Đặt $S$ là một không gian con hữu hạn chiều của $V$. Thì
+
+i) Với bất kỳ $\mathbf{v} \in V$ nào, và cơ sở trực chuẩn $\mathbf{u}_1, ..., \mathbf{u}_m$ của $S$
+
+$$
+P_S\mathbf{v} = \left<\mathbf{v}, \mathbf{u}_1\right>\mathbf{u}_1 + ... + \left<\mathbf{v}, \mathbf{u}_m\right>\mathbf{u}_m
+$$
+
+ii) Với bất kỳ $\mathbf{v} \in V$ nào, $\mathbf{v} - P_S\mathbf{v} \perp S$
+
+iii) $P_S$ là một ánh xạ tuyến tính
+
+iv) $P_S$ là đồng nhất khi giới hạn về $S$, tức là $P_S\mathbf{s} = \mathbf{s}$ với mọi $\mathbf{s} \in S$
+
+v) $range(P_S) = S$ và $null(P_S) = S^{\perp}$
+
+vi) $P_S^2 = P_S$
+
+vii) Với bất kỳ $\mathbf{v} \in V$ nào, $$\|P_S\mathbf{v}\| \leq \| \mathbf{v}\|$$
+
+viii) Với bất kỳ $\mathbf{v} \in V$ và $\mathbf{s} \in S$
+
+$$
+\|\mathbf{v} - P_S\mathbf{v}\| \leq \|\mathbf{v} - \mathbf{s}\|
+$$
+
+với dấu đẳng thức xảy ra nếu và chỉ nếu $\mathbf{s} = P_S\mathbf{v}$.
+
+$$
+P_S\mathbf{v} = \underset{\mathbf{s} \in S}{\text{arg min }} \| \mathbf{v} - \mathbf{s}\|
+$$
+
+*Chứng minh*
 
 ## Trị riêng - Eigenthings
 
@@ -507,20 +543,315 @@ $$
 \lambda_{min}(\mathbf{A}) \leq R_{\mathbf{A}}(\mathbf{x}) \leq \lambda_{max}(\mathbf{A})
 $$
 
-## Ma trận xác định dương - Positive (semi-)definite matrices
+## Ma trận (nửa) xác định dương - Positive (semi-)definite matrices
+
+Một ma trận đối xứng $\mathbf{A}$ được gọi là nửa xác định dương (positive semi-definite) nếu tất cả $\mathbf{x} \in \mathbb{R}^n, \mathbf{x}^T\mathbf{A}\mathbf{x} \geq 0$. Đôi khi người ta viết $\mathbf{A} \succeq 0$ để chỉ rằng $\mathbf{A}$ là nửa xác định dương.
+
+Một ma trận đối xứng $\mathbf{A}$ được gọi là nửa định dương positive definite nếu tất cả những vector khác không $\mathbf{x} \in \mathbb{R}^n, \mathbf{x}^T\mathbf{A}\mathbf{x} > 0$. Đôi khi người ta viết $\mathbf{A} \succ 0$ để chỉ rằng $\mathbf{A}$ là xác định dương. Lưu ý rằng tính xác định dương mạnh hơn tính nửa xác định dương, có nghĩa là mọi ma trận xác định dương đều ra ma trận nửa xác định dương, nhưng ngược lại thì không!
+
+**Mệnh đề 5** Một ma trận đối xứng là ma trận nửa xác định dương nếu và chỉ nếu tất cả giá trị riệng của nó là không âm và xác định dương nếu và chỉ nếu tất cả các giá trị riêng của nó là dương.
+
+*Chứng minh*
+
+Giả sử rằng $\mathbf{A}$ là nửa xác định dương, và gọi $\mathbf{x}$ là vector riêng của $\mathbf{A}$ với giá trị riêng $\lambda$. Thì
+
+$$
+0 \leq \mathbf{x}^T\mathbf{A}\mathbf{x} = \mathbf{x}^T(\lambda\mathbf{x})\mathbf{x} = \lambda\mathbf{x}^T\mathbf{x} = \lambda\|x\|_2^2
+$$
+
+Vì $\mathbf{x} \ne 0$ (bởi giả định nó là một vector riêng), ta có $$\|x\|_2^2$$, nên ta có thể chia hai vế với $$\|x\|_2^2$$ và nhận được $\lambda \geq 0$. Nếu $\mathbf{A}$ là xác định dương, thì bất đẳng thức này nghiêm ngặt hơn một chút, $\lambda > 0$
+
+Để đơn giản chứng minh, chúng ta sẽ dùng kỹ thuật Thương số Rayleigh. Giả định rằng $\mathbf{A}$ là đối xứng và tất cả những vector riêng của nó là không âm. Thì với mọi $$\mathbf{x} \ne 0$$:
+
+$$
+0 \leq \lambda_{min}(\mathbf{A}) \leq R_{\mathbf{A}}(\mathbf{x})
+$$
+
+Bởi vì $\mathbf{x}^T\mathbf{A}\mathbf{x}$ cùng dấu với R_{\mathbf{A}}(\mathbf{x}), chúng ta có thể kết luật $\mathbf{A}$ nửa xác định dương. Nếu tất cả giá trị riêng của $\mathbf{A}$ dương, thì $0 < \lambda_{min}(\mathbf{A})$, vì thế dẫn đến $\mathbf{A}$ xác định dương
+
+**Mệnh đề 6** Giả sử $\mathbf{A} \in \mathbb{R}^{m \times n}$. Thì $\mathbf{A}^T\mathbf{A}$ là nửa xác định dương. Nếu $$null(\mathbf{A}) = \{0\}$$ thì $\mathbf{A}^T\mathbf{A}$ xác định dương.
+
+*Chứng minh*
+
+Với bất kỳ $\mathbf{x} \in \mathbb{R}^n$
+
+$$
+\mathbf{x}^T(\mathbf{A}^T\mathbf{A})\mathbf{x} = (\mathbf{A}\mathbf{x})^T(\mathbf{A}\mathbf{x}) = \|\mathbf{A}\mathbf{x}\|_2^2 \geq 0
+$$
+
+nên $\mathbf{A}^T\mathbf{A}$ nửa xác định dương. Nếu $$null(\mathbf{A}) = \{0\}$$ thì $\mathbf{A}\mathbf{x} \ne 0$ khi $\mathbf{x} \ne 0$ nên $\|\mathbf{A}\mathbf{x}\|_2^2 > 0$ và do đó $\mathbf{A}^T\mathbf{A}$ xác định dương
+
+Những ma trận xác định dương là khả nghịch (vì giá trị riêng của chúng khác 0), trong khi nửa xác định dương thì không chắc. Tuy nhiên nếu bạn đã có một ma trận nửa xác định dương, có thể xáo trộn đường chéo của nó một chút để tạo ra một ma trận xác định dương
+
+**Mệnh đề 7** Nếu $\mathbf{A}$ nửa xác định dương và $\epsilon > 0$ thì $\mathbf{A} + \epsilon\mathbf{I}$ xác định dương
+
+*Chứng minh*
+
+Giả định $\mathbf{A}$ nửa xác định dương và $\epsilon > 0$, ta có với bất kỳ $$\mathbf{x} \ne 0$$
+
+$$
+\mathbf{x}^T(\mathbf{A} + \epsilon\mathbf{I}) = \mathbf{x}^T\mathbf{A}\mathbf{x} + \epsilon\mathbf{x}^T\mathbf{I}\mathbf{x} =  \underset{\geq 0}{\mathbf{x}^T\mathbf{A}\mathbf{x}} + \underset{> 0}{\epsilon\mathbf{x}^T\mathbf{I}\mathbf{x} } > 0
+$$
+
+### Hình học của các dạng bậc hai xác định dương
 
 ## Singular Value Decomposition (SVD)
 
+Singular value decomposition (SVD) là một công cụ ứng dụng rộng rãi của Đại số tuyến tính. Ý tưởng chính của bắt nguồn từ dữ kiện là mọi ma trận $\mathbf{A} \in \mathbb{R}^{m \times n}$ có một SVD (cho dù là ma trận không vuông). Phép phân rã như sau
+
+$$
+\mathbf{A} = \mathbf{U}\Sigma\mathbf{V}^T
+$$
+
+Trong đó: $\mathbf{U} \in \mathbb{R}^{m \times n}$ và $\mathbf{V} \in \mathbb{R}^{n \times n}$ là những ma trận trực giao và $\Sigma \in \mathbb{R}^{m \times n}$ là ma trận dường chéo với những **singular values** của $\mathbf{A}$ (đặt là $\sigma_i$) trên đường chéo của nó.
+
+Chỉ $r = rank(\mathbf(A))$ singular values là khác không, và theo quy ước chúng có thứ tự giảm dần, tức là
+
+$$
+\sigma_1 \geq \sigma_2 \geq ... \geq \sigma_r \geq \sigma_{r+1} = ... = \sigma_{min(m,n)} = 0
+$$
+
+Một cách viết khác của SVD là
+
+$$
+\mathbf{A} = \sum_{i=1}^{r}\sigma_i\mathbf{u}_i\mathbf{v}_i^T
+$$
+
+Trong đó: $\mathbf{u}_i$ và $\mathbf{v}_i$ là cột thứ i của $\mathbf{U}$ và $\mathbf{V}$ tương ứng.
+
+Nhận thấy những thừa số (factors) cho phân rã trị riêng (eigendecompositions) cho $\mathbf{A}^T\mathbf{A}$ và $\mathbf{A}\mathbf{A}^T$
+
+$$
+\begin{gather}
+\mathbf{A}^T\mathbf{A} = (\mathbf{U}\Sigma\mathbf{V}^T)^T\mathbf{U}\Sigma\mathbf{V}^T = \mathbf{V}\Sigma^T\mathbf{U}^T\mathbf{U}\Sigma\mathbf{V}^T = \mathbf{V}\Sigma^T\Sigma\mathbf{V}^T\\
+\mathbf{A}\mathbf{A}^T = \mathbf{U}\Sigma\mathbf{V}^T(\mathbf{U}\Sigma\mathbf{V}^T)^T = \mathbf{U}\Sigma\mathbf{V}^T\mathbf{V}\Sigma^T\mathbf{U}^T = \mathbf{U}\Sigma\Sigma^T\mathbf{U}^T
+\end{gather}
+$$
+
+Các cột của $\mathbf{V}$ (right-singular vectors của $\mathbf{A}$) là những vector riêng của $\mathbf{A}^T\mathbf{A}$ và các cột của $\mathbf{U}$ (left-singular vectors của $\mathbf{A}$) là những vector riêng của $\mathbf{A}\mathbf{A}^T$
+
+Các ma trận $\Sigma^T\Sigma$ và $\Sigma\Sigma^T$ không nhất thiết phải cùng kích cỡ, những cả hai phải là ma trận đường chéo với bình phương các singular values $\sigma^2_i$ trên đường chéo. Do đó singular values của $\mathbf{A}$ là căn bậc hai của những giá trị riêng của $\mathbf{A}^T\mathbf{A}$ (hoặc một cách tương đương, của $\mathbf{A}\mathbf{A}^T$)
+
 ## Định lý cơ sở của Đại số tuyến tính
 
-## Toán tử và ma trận chuẩn
+Mặc dù với cái tên thú vị của nó "Fundamental Theorem of Linear Algebra - Định lý cơ sở của Đại số tuyến tính" không phải là một định lý được cộng đồng chấp nhận, có một số sự không rõ ràng về chính xác nó bao gồm những mệnh đề nào.
+
+**Theorem 4** Nếu $\mathbf{A} \in \mathbb{R}^{m \times n}$
+
+i) $null(\mathbf{A}) = range(\mathbf{A}^T)^{\perp}$
+
+ii) $null(\mathbf{A}) \bigoplus range(\mathbf{A}^T) = \mathbb{R}^n$
+
+iii) $\underbrace{dim \text{ }range(\mathbf{A})}_\text{rank(A)} + dim\text{ }null(\mathbf{A}) = n$
+
+iv) Nếu $\mathbf{A} = \mathbf{U}\Sigma\mathbf{V}^T$ là singular value decomposition của $\mathbf{A}$, thì những cột của $\mathbf{U}$ và $\mathbf{V}$ hình thành cơ sở trực chuẩn cho "bốn không gian con" của $\mathbf{A}$
+
+| Không gian con  | Cột  |
+|---|---|
+| $range(\mathbf{A})$  | $r$ cột đầu tiên của $\mathbf{U}$  |
+| $range(\mathbf{A}^T)$  | $r$ cột đầu tiên của $\mathbf{V}$  |
+| $null(\mathbf{A})$  | $m - r$ cột cuối cùng của $\mathbf{U}$  |
+| $null(\mathbf{A}^T)$  | $m - r$ cột cuối cùng của $\mathbf{V}$  |
+
+trong đó: $r = rank(\mathbf{A})$
+
+*Chứng minh*:
+
+## Toán tử (Operator) và chuẩn ma trận (matrix norms)
+
+Nếu $V$ và $W$ là những không gian vector thì tập ánh xạ tuyến tính từ $V$ vào $W$ hình thành một không gian vector khác và chuẩn định nghĩa trên $V$ và $W$ tạo ra một chuẩn (norm) trên không gian của những ánh xạ tuyến tính này. Nếu $T: V \rightarrow W$ là một ánh xạ tuyến tính giữa không gian định chuẩn $V$ và $W$, thì chuẩn toán tử (operator norm) được định nghĩa
+
+$$
+\|T\|_{op} = \underset{\mathbf{x} \in V\\ \mathbf{x} \ne 0}{\text{max }}\frac{\|T\mathbf{x}\|_W}{\|\mathbf{x}\|_V}
+$$
+
+Một lớp quan trọng của định nghĩa tổng quát này là khi miền và đồng miền là $\mathbb{R}^n$ và $\mathbb{R}^m$ và $p$-norm được sử dụng trong cả hai trường hợp. Thì với một ma trận $\mathbf{A} \in \mathbb{R}^{m \times n}$
+
+$$
+\|\mathbf{A}\|_{p} = \underset{\mathbf{x} \ne 0}{\text{max }}\frac{\|\mathbf{A}\mathbf{x}\|_p}{\|\mathbf{x}\|_p}
+$$
+
+Trong những trường hợp đặc biệt của $p = 1, 2, \infty$, ta có
+
+$$
+\|\mathbf{A}\|_{1} = \underset{1 \leq j \leq n}{\text{max }}\sum_{i=1}^m|A_{ij}|
+$$
+
+$$
+\|\mathbf{A}\|_{\infty} = \underset{1 \leq j \leq m}{\text{max }}\sum_{i=1}^n|A_{ij}|
+$$
+
+$$
+\|\mathbf{A}\|_{2} = \sigma_1(\mathbf{A})
+$$
+
+trong đó $\sigma_1$ đại diện cho singular value lớn nhất. Để ý rằng 1- và $\infty$-norm được tạo ra bằng cách đơn giản lấy giá trị lớn nhất tổng cột và dòng, tương ứng. 2-norm (thường gọi là spectral norm - chuẩn phổ) đơn giản thành $\sigma_1$ bởi tính chất của Thương số Rayleigh
+
+$$
+\underset{\mathbf{x} \ne 0}{\text{arg max}}\frac{\|\mathbf{A}\mathbf{x}\|_2}{\|\mathbf{x}\|_2} = \underset{\mathbf{x} \ne 0}{\text{arg max}}\frac{\|\mathbf{A}\mathbf{x}\|_2^2}{\|\mathbf{x}\|_2^2} = \underset{\mathbf{x} \ne 0}{\text{arg max}}\frac{\mathbf{x}^T\mathbf{A}^T\mathbf{A}\mathbf{x}}{\mathbf{x}^T\mathbf{x}}
+$$
+
+và ta có thể thấy biểu thức bên phải nhất được cực đại bởi một vector riêng của $\mathbf{A}^T\mathbf{A}$ tương ứng với giá trị riêng lớn nhất của nó $\lambda_{max}(\mathbf{A}^T\mathbf{A}) = \sigma_1^2(\mathbf{A})$
+
+Bởi định nghĩa, tạo ra những ma trận chuẩn có tính chất quan quan trọng là
+
+$$
+\| \mathbf{A}\mathbf{x} \|_p \leq \|\mathbf{A}\|_p\|\mathbf{x}\|_p
+$$
+
+với bất kỳ $\mathbf{x}$ nào.
+
+**Mệnh đề 8**
+
+$$
+\| \mathbf{A}\mathbf{B} \|_p \leq \|\mathbf{A}\|_p\|\mathbf{B}\|_p
+$$
+
+*Chứng minh*
+
+Với bất kỳ $\mathbf{x}$
+
+$$
+\| \mathbf{A}\mathbf{B}\mathbf{x} \|_p \leq \| \mathbf{A}\|_p\| \mathbf{B}\mathbf{x} \|_p \leq \|\mathbf{A}\|_p\| \mathbf{B}\|_p\|\mathbf{x}\|_p\|
+$$
+
+nên
+
+$$
+\| \mathbf{A}\mathbf{B} \|_p = \underset{\mathbf{x} \ne 0}{\text{max}}\frac{\|\mathbf{A}\mathbf{B}\mathbf{x}\|}{\|\mathbf{x}\|_p} \leq \underset{\mathbf{x} \ne 0}{\text{max}}\frac{\|\mathbf{A}\|_p\| \mathbf{B}\|_p\|\mathbf{x}\|_p\|}{\|\mathbf{x}\|_p} = \|\mathbf{A}\|_p\|\mathbf{B}\|_p
+$$
+
+Kết luận điều phải chứng minh.
+
+Không chỉ có chuẩn ma trận (matrix norms). Một thứ khác hay được sử dùng đó là **Frobenius norm**
+
+$$
+\|\mathbf{A}\|_F = \sqrt{\sum_{i=1}^n\sum_{j=1}^nA_{ij}^2} = \sqrt{tr{\mathbf{A}^T\mathbf{A}}} = \sqrt{\sum_{i=1}^{min(m,n)}\sigma_i^2(\mathbf{A})}
+$$
+
+Đẳng thức đầu tiên được giải thích một cách đơn giản bằng cách khai triển định nghĩa của phép nhân ma trận (matrix multiplication) và vết (trace). Với đẳng thức thứ hai, quan sát thấy ($\mathbf{A} = \mathbf{U}\Sigma\mathbf{V}^T$)
+
+$$
+tr{\mathbf{A}^T\mathbf{A}} = tr(\mathbf{V}\Sigma^T\Sigma\mathbf{V}^T) = tr(\mathbf{V}^T\mathbf{V}\Sigma^T\Sigma) = tr(\Sigma^T\Sigma) = \sum_{i=1}^{min(m,n)}\sigma_i^2(\mathbf{A})
+$$
+
+sử dụng tính chất tuần hoàn (cyclic property) của vết và tính trực giao của $\mathbf{V}$
+
+Một chuẩn ma trận $$\|.\|$$ được gọi là bất biến đơn nhất (unitary invariant) nếu
+
+$$
+\|\mathbf{U}\mathbf{A}\mathbf{V}\| = \|\mathbf{A}\|
+$$
+
+với mất cả các trực giao $\mathbf{U}$ và $\mathbf{V}$ có kích thước phù hợp. Chuẩn bất biến đơn nhất về bản chất chỉ phụ thuộc vào các giá trị singular values của một ma trận, vì với những chuẩn này
+
+$$
+\|\mathbf{A}\| = \|\mathbf{U}\Sigma\mathbf{V}^T\| = \|\Sigma\|
+$$
+
+Hai chuẩn mà chúng ta đã biết, chuẩn phổ (spectral norm) và chuẩn Frobenius (Frobenius norm), có thể được biểu diễn thông qua thuật ngữ singular values của một ma trận
+
+**Mệnh đề 9** Chuẩn phổ (spectral norm) và chuẩn Frobenius (Frobenius norm) là bất biến đơn nhất (unitary invariant)
+
+*Chứng minh*
+
+Với chuẩn Frobenius (Frobenius norm)
+
+$$
+tr((\mathbf{U}\mathbf{A}\mathbf{V})^T\mathbf{U}\mathbf{A}\mathbf{V}) = tr(\mathbf{V}^T\mathbf{A}^T\mathbf{U}^T\mathbf{U}\mathbf{A}\mathbf{V}) = tr(\mathbf{V}\mathbf{V}^T\mathbf{A}^T\mathbf{A}) = tr(\mathbf{A}^T\mathbf{A})
+$$
+
+Với chuẩn phổ, nhớ lại là $$\|\mathbf{U}\mathbf{x}\| = \|\mathbf{x}\|_2$$ với kỳ trực giao $\mathbf{U}$ nào. Và do đó:
+
+$$
+\|\mathbf{U}\mathbf{A}\mathbf{V}\|_2 = \underset{\mathbf{x} \ne 0}{\text{max }}\frac{\|\mathbf{U}\mathbf{A}\mathbf{V}\mathbf{x}\|_2}{\|\mathbf{x}\|_2} = \underset{\mathbf{x} \ne 0}{\text{max }}\frac{\|\mathbf{A}\mathbf{V}\mathbf{x}\|_2}{\|\mathbf{x}\|_2} = \underset{\mathbf{y} \ne 0}{\text{max }}\frac{\|\mathbf{A}\mathbf{y}\|_2}{\|\mathbf{y}\|_2} = \|\mathbf{A}\|_2
+$$
+
+Trong đó, ta sử dùng phép đổi biến $\mathbf{y} = \mathbf{V}^T\mathbf{x}$ mà thỏa điều kiện $$\|\mathbf{y}\|_2 = \|\mathbf{x}\|_2$$. Bởi vì $\mathbf{V}^T$ là khả nghịch, $\mathbf{x}$ và $\mathbf{y}$ là tương ứng một - một, và $$\mathbf{y} = 0$$ nếu và chỉ nếu $$\mathbf{x} = 0$$. Vì thế cực đại với $$\mathbf{y} \ne 0$$ là tương đương với cực đại với $$\mathbf{x} \ne 0$$
 
 ## Xấp xỉ hạng thấp (low-rank)
 
+Một ứng dụng thực tế quan trọng của SVD là để tính toán xấp xỉ hạng thấp (low-rank approximations) cho ma trận. Cho một số ma trận, chúng ta muốn tìm một ma trận khác cùng chiều nhưng có hạng thấp hơn mà hai ma trận là gần nhau với một vài chuẩn. Một xấp xỉ như thế có thể được sử dụng để giảm một số lượng lớn dữ liệu cần để lưu trữ một ma trận, trong khi vẫn giữ được hầu hết thông tin của nó
+
+Một kết quả đáng chú ý được biết đến là định lý Eckart-Young-Mirsky (Eckart-Young-Mirsky theorem) nói rằng ma trận tối ưu có thể được tính toán một cách dễ dàng từ SVD, giống như chuẩn trong câu hỏi bất biến đơn nhất (ví dụ như spectral norm hay Frobenius norm)
+
+**Theorem 5** (Eckart-Young-Mirsky) Đặt $$\|.\|$$ là một chuẩn ma trận bất biến đơn nhất (unitary invariant
+matrix norm). Giả sử $\mathbf{A} \in \mathbb{R}^{m \times n}$, trong đó $m \geq n$ có singular value decomposition $\mathbf{A} = \sum_{i=1}^n\sigma_i\mathbf{u}_i\mathbf{v}_i^T$. Thì xấp xỉ hạng k tốt nhất cho $\mathbf{A}$, trong đó $k \leq rank(\mathbf{A})$, được cho bởi
+
+$$
+\mathbf{A}_k = \sum_{i=1}^k\sigma_i\mathbf{u}_i\mathbf{v}_i^T
+$$
+
+có nghĩa là
+
+$$
+\|\mathbf{A} - \mathbf{A}_k\| \leq \|\mathbf{A} - \widetilde{\mathbf{A}}\|
+$$
+
+*Chứng minh*
+
+
 ## Giả nghịch đảo (Pseudoinverses)
 
-## Matrix-Vector - Tổ hợp tuyến tính của ma trận cột
+Gọi $\mathbf{A} \in \mathbb{R}^{m \times n}$. Nếu $m \ne n$ thì $\mathbf{A}$ **không khả nghịch**. Tuy nghiên, có một phép khả nghịch tổng quát được gọi là **Moore-Penrose pseudoinverse** - giả nghịch đảo Moore-Penrose, ký hiệu là $A^{\dagger}$, mà luôn luôn tồn tại và được định nghĩa duy nhất bởi những tính chất sau
 
-## Matrix-Matrix Products
+i) $\mathbf{A}\mathbf{A}^{\dagger} \mathbf{A} = \mathbf{A} $
+
+ii) $\mathbf{A}^{\dagger}\mathbf{A}\mathbf{A}^{\dagger} = \mathbf{A}^{\dagger}$
+
+iii) $\mathbf{A}\mathbf{A}^{\dagger}$ là đối xứng
+
+iv) $\mathbf{A}^{\dagger}\mathbf{A}$ là đối xứng
+
+Nếu $\mathbf{A}$ khả nghịch, thì $\mathbf{A}^{\dagger} = \mathbf{A}^{-1}$. Một cách tổng quát hơn, ta có thể tính toán giả nghịch đảo của một ma trận từ singular value decomposition của nó: nếu $\mathbf{A} = \mathbf{U}\Sigma\mathbf{V}^T$, thì
+
+$$
+\mathbf{A}^{\dagger} = \mathbf{V}\Sigma^{\dagger}\mathbf{U}^T
+$$
+
+trong đó $\Sigma^{\dagger}$ có thể được tính toán từ $\Sigma$ bằng cách lấy chuyển vị và nghịch đảo giá trị singular values khác không trên đường chéo.
+
+## Tích Matrix-Vector như phép tổ hợp tuyến tính của các cột ma trận
+
+**Mệnh đề 10** Gọi $\mathbf{x} \in \mathbb{R}^n$ là một vector và $\mathbf{A} \in \mathbb{R}^{m \times n}$ là một ma trận với các cột $a_1, ..., a_n$. Thì
+
+$$
+\mathbf{A}\mathbf{x} = \sum_{i=1}^nx_ia_i
+$$
+
+## Tích Matrix-Matrix như tổng tích ngoài
+
+Một tích ngoài (outer product) là một biểu thức dạng $\mathbf{ab}^T$ trong đó $\mathbf{a} \in \mathbb{R}^m$ và $\mathbf{b} \in \mathbb{R}^m$
+
+**Mệnh đề 11** Gọi $a_1, ..., a_k \in \mathbb{R}^m$ và $b_1, ..., b_k \in \mathbb{R}^n$. Thì
+
+$$
+\sum_{l=1}^ka_lb_l^T = \mathbf{AB}^T
+$$
+
+Trong đó
+
+$$
+\begin{gather}
+\mathbf{A} = [a_1, ..., a_k]\\
+\mathbf{B} = [b_1, ..., b_k]\\
+\end{gather}
+$$
+
+*Chứng minh*
+
+Với mỗi $(i, j)$, ta có
+
+$$
+\left[\sum_{l=1}^ka_lb_l^T\right]_{ij} = \sum_{l=1}^k[a_lb_l^T]_{ij} = \sum_{l=1}^k[a_l]_i[b_l^T]_j=\sum_{l=1}^kA_{il}B_{jl}
+$$
+
+Biểu thức cuối cùng được biểu diễn như một tích trong giữa cột thứ $i$ của $\mathbf{A}$ và dòng thứ $j$ của $\mathbf{B}$, hay tương đương với cột thứ $j$ của $\mathbf{B}^T$, và theo định nghĩa của phép nhân ma trận, nó tương đương với $[\mathbf{AB}^T]_{ij}$
 
 ## Dạng toàn phương - Quadratic forms
+
+Gọi $\mathbf{A} \in \mathbb{R}^{n \times n}$ là một ma trận đối xứng, và ta nhớ lại là biểu thức $\mathbf{x}^T\mathbf{A}\mathbf{x}$ được gọi là dạng toàn phương của $\mathbf{A}$. Trong một vài trường hợp có thể viết lại dạng toàn phương trong một thuật ngữ phần tử cá thể tạo nên $\mathbf{A}$ và $\mathbf{x}$
+
+$$
+\mathbf{x}^T\mathbf{A}\mathbf{x} = \sum_{i=1}^n\sum_{j=1}^nA_{ij}x_ix_j
+$$
