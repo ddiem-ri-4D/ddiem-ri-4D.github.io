@@ -202,6 +202,10 @@ $$
 
 ### Độ lệch chuẩn (Standard deviation)
 
+$$
+std = \sqrt{Var(X)}
+$$
+
 ## Hiệp phương sai (Covariance)
 
 $$
@@ -228,11 +232,66 @@ $$
 
 ## Vector ngẫu nhiên (Random Vector)
 
+Cho đến hiện tại, chúng ta đang nói về những phân phối đơn biến (**univariate distributions**), đó là những phân bối một biến. Nhưng chúng ta cũng có thể nói về phân phối đa biến **multivariate distributions** được cho bởi những vector ngẫu nhiên **random vector**
+
+$$
+\mathbf{X} = \begin{bmatrix}X_1\\...\\X_n\end{bmatrix}
+$$
+
+$$
+\mathbb{E}[\mathbf{X}] = \begin{bmatrix}\mathbb{E}[X_1]\\...\\\mathbb{E}[X_n]\end{bmatrix}
+$$
+
+$$
+\mathbf{\Sigma} = \mathbb{E}[(\mathbf{X} - \mathbb{E}[\mathbf{X}])(\mathbf{X} - \mathbb{E}[\mathbf{X}])^T] = \begin{bmatrix}
+Var(X_1) & Cov(X_1, X_2) & ... & Cov(X_1, X_n)\\
+Cov(X_2, X_1) & Var(X_2) & ... & Cov(X_2, x_n)\\
+... & ... & ... & ... \\
+Cov(X_n, X_1) & Cov(X_n, X_2) & ... & Var(X_n)
+\end{bmatrix}
+$$
+
 ## Ước lượng tham số (Estimation of Parameters)
 
 ### Ước lượng triển vọng cực đại (Maximum likelihood estimation)
 
+Một cách phổ thông để khớp tham số (fit parameters) là ước lượng triển vọng cực đại (maximum likelihood estimation - MLE). Nguyên lý cơ bản của MLE là chọn những giá trị mà "giải thích" dữ liệu tốt tất bằng cách cực đại xác suất/ mật độ của dữ liệu mà ta thấy như một hàm của những tham số. Giả định ta có các biến ngẫu nhiên $X_1, ..., X_n$ và những quan sát tương ứng $x_1, ..., x_n$. Thì
+
+$$
+\hat{\theta}_{MLE} = \underset{\theta}{\text{arg max }}\mathcal{L}(\theta)
+$$
+
+trong đó $\mathcal{L}$ là **likelihood function**
+
+$$
+\mathcal{L}(\theta) = p(x_1, ..., x_n; \theta)
+$$
+
+Thông thường, ta giả sử rằng $X_1, ..., X_n$ là những biến độc lập và có phân phối giống hệt nhau (independent and identically distributed random variables)
+
+$$
+p(x_1, ..., x_n; \theta) = \prod_{i=1}^np(x_i;\theta)
+$$
+
+$$
+log\mathcal{L}(\theta)  = \sum_{i=1}^nlog(p(x_i;\theta))
+$$
+
 ### Ước lượng một cực đại hậu nghiệm (Maximum a posteriori estimation)
+
+Một cách Bayesian để khớp tham số là ước lượng một cực đại hậu nghiệm (maximum a posteriori estimation - MAP). Trong kỹ thuật này, ta giả định rằng những tham số là một biến ngẫu nhiên và ta xác định một tiền phân phối $p(\theta)$. Sau đó, ta có thể dùng Bayes's rule để tính toán phân phối hậu nghiệm của những tham số của dữ liệu quan sát được
+
+$$
+p(\theta \| x_1, ..., x_n) \propto p(\theta)p(x_1, ..., x_n | \theta)
+$$
+
+$$
+\hat{\theta}_{MAP} = \underset{\theta}{\text{arg max }}p(\theta)p(x_1, ..., x_n | \theta)
+$$
+
+$$
+\hat{\theta}_{MAP}  = \underset{\theta}{\text{arg max }}\left(log(p(\theta)) + \sum_{i=1}^nlog(p(x_i | \theta))\right)
+$$
 
 ## Phân phối Gauss (Gaussian Distribution)
 
