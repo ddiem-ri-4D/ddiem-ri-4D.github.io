@@ -595,6 +595,8 @@ $$
 
 ### Hình học của các dạng bậc hai xác định dương
 
+Còn tiếp ...
+
 ## Singular Value Decomposition (SVD)
 
 Singular value decomposition (SVD) là một công cụ ứng dụng rộng rãi của Đại số tuyến tính. Ý tưởng chính của bắt nguồn từ dữ kiện là mọi ma trận $\mathbf{A} \in \mathbb{R}^{m \times n}$ có một SVD (cho dù là ma trận không vuông). Phép phân rã như sau
@@ -654,8 +656,6 @@ iv) Nếu $\mathbf{A} = \mathbf{U}\Sigma\mathbf{V}^T$ là singular value decompo
 | $null(\mathbf{A}^T)$  | $m - r$ cột cuối cùng của $\mathbf{V}$  |
 
 trong đó: $r = rank(\mathbf{A})$
-
-*Chứng minh*:
 
 ## Toán tử (Operator) và chuẩn ma trận (matrix norms)
 
@@ -787,9 +787,6 @@ có nghĩa là
 $$
 \|\mathbf{A} - \mathbf{A}_k\| \leq \|\mathbf{A} - \widetilde{\mathbf{A}}\|
 $$
-
-*Chứng minh*
-
 
 ## Giả nghịch đảo (Pseudoinverses)
 

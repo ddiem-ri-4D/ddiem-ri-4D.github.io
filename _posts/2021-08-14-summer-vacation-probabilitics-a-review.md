@@ -136,8 +136,6 @@ $$
 p(x) = F'(x)
 $$
 
-### Một số loại biến ngẫu nhiên khác
-
 ## Phân phối kết hợp (Joint Distribution)
 
 ### Biến ngẫu nhiên độc lập
