@@ -93,13 +93,12 @@ toc: true
 - [Phân lớp cho hai quần thể phân phối chuẩn đa biến cùng ma trận hiệp phương sai](/content/msa/classification/classification_part_3)
 - [Phân lớp với hai quần thể phân phối chuẩn đa biến không cùng ma trận hiệp phương sai](/content/msa/classification/classification_part_4)
 - [Đánh giá hàm phân lớp](/content/msa/classification/classification_part_5)
-- Phân lớp nhiều quần thể
-- Phương pháp Fisher cho việc phân lớp nhiều quần thể
-- So sánh Minimum ECM/TPM và Linear Discriminant Analysis
+- [Phân lớp nhiều quần thể](/content/msa/classification/classification_part_6)
+- [Phương pháp Fisher cho việc phân lớp nhiều quần thể](/content/msa/classification/fisher)
 - [Discriminant Analysis bằng tiếp cận Giải tích](/content/msa/classification/lda_calculus)
-- Bayes Classifiers
-- Classification trees
-- Support Vector Machines
+- [Bayes Classifiers](/content/msa/classification/bayes)
+- [Classification trees](/content/msa/classification/classification-tree)
+- [Support Vector Machines](/content/msa/classification/svm)
 
 ### Gom nhóm - Clustering
 

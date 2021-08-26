@@ -34,7 +34,7 @@ toc: true
 
 - Máy học hiện đại: Artificial Neural Networks
 - Máy học hiện đại: Deep Neural Networks
-- Máy học hiện đại: Convolutiona Neural Networks
+- Máy học hiện đại: Convolutional Neural Networks
 - Máy học hiện đại: Recurrent Neural Networks
 - Máy học hiện đại: Attention Mechanisms
 - Máy học hiện đại: Deep Generative Models

@@ -13,19 +13,19 @@ comments: true
 
 Hi! I'm currently as a student who goes by the full name is **Le Nhut Nam** (with Vietnamese format). I lived in Vietnam since I was born, for studying I'm now living in Ho Chi Minh City, for three years.
 
-**My background** is Computer Science at Ho Chi Minh University of Science, VNU (HCMUS), before go to there for my learning, I used to live in home town - Tayninh, for a long time in my childhood. In my past, I studied at Hoang Le Kha High School For the Gifted student from 2015 to 2018, non-specialized class, major in A-Group (Nature Science Group include Mathematics, Physics and Chemistry).
+**My background** is Computer Science at Ho Chi Minh University of Science, VNU (HCMUS), before go to there for my learning, I used to live in home town - Tayninh, for a long time in my childhood. In my past, I studied at Hoang Le Kha High School For the Gifted student from 2015 to 2018, non-specialized class, major in A-Group (Natural Science Group include Mathematics, Physics and Chemistry).
 
 Currently, I'm focusing on research **Graph Theory**, **Graph Convolution Neural Networks** and **Complex Networks**. In addition, at my university, I have learned a lot of interesting subjects such as Machine Learning, Recognition, Multivariate Statistical Analysis, etc.
 
-My **strong points** are flexibity, focused and continuous learning. In my works, I always foucsing to get the highest results that I can. But some way, like any people who live on the Earth, I also have some **weak points**, include public speaking and presentation skills.
+My **strong points** are flexibity, focused and continuous learning. In my works, I always focusing to get the highest results that I can. But some way, like any people who live on the Earth, I also have some **weak points**, include public speaking and presentation skills.
 
 **My goal for my future** is become Computer Scientist, get Master Degree in Computer Science, and for long term plan, get PhD in Computer Science.
 
 <p><img style="float: right;margin:5px 20px 5px 1px" src="https://wallpapercave.com/wp/wp8540750.jpg" width="200px"></p>
 
-Besides computer programming, I like watching anime and reading light novel. My favoriate categories are romance-comedy, adventure and action. I also like Mathematics very mauch, especially in Applied Linear Algebra and Statistical.
+Besides computer programming, I like watching Anime and reading light novel. My favorite categories are romance-comedy, adventure and action. I also like Mathematics very much, especially in Applied Linear Algebra and Statistical.
 
-This is a site which has a template fork from minimal mistake, just a static github pages that post something about me, my work and some blog-post (written in English or Vietnamese depend on my opinion). If you guy interested about me, please look at my Linkedin profile end my [CV here](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/nhutnamhcmus/resume/main/resume.pdf){:target="_blank"}
+This is a site which has a template fork from minimal mistake, just a static Github pages that post something about me, my work and some blog-post (written in English or Vietnamese depend on my opinion). If you guy interested about me, please look at my Linkedin profile end my [CV here](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/nhutnamhcmus/resume/main/resume.pdf){:target="_blank"}
 
 
 =)) The meme I like most
@@ -59,13 +59,13 @@ Now I'm also working on [Lenux-Notebooks Collections](https://nhutnamhcmus.githu
 
 ### About site’s content
 
-This site is my own include article text, program code, images, photos, videos in this site. If you want to copy its content, you have to reference my name in your own article text, program code, images, photos, videos. Most of ebooks, papers and references links will be named, public clearly, it help you can search all of them with Google Search.
+This site is my own include article text, program code, images, photos, videos in this site. If you want to copy its content, you have to reference my name in your own article text, program code, images, photos, videos. Most of Ebooks, papers and references links will be named, public clearly, it help you can search all of them with Google Search.
 
 This site powered by Minimal Mistakes Jekyll theme - a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios under the MIT License (MIT) - Copyright (c) 2013-2020 Michael Rose and contributors.
 
 Most of my projects, program code under MIT LICENSE, if you want to use it, please following the MIT LICENSE, and ask me permission beforehand.
 
-Some of my article text, translate lecture’s course are usually use for free (for education not for commercial) and you have to aske its author (if you want to use lectures’ course) or you have to ask me permission if want to use, copy my article text.
+Some of my article text, translate lecture’s course are usually use for free (for education not for commercial) and you have to ask its authors (if you want to use lectures’ course) or you have to ask me permission if want to use, copy my article text.
 
 ### About the language use for article text
 
