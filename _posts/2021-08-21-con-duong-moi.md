@@ -9,7 +9,7 @@ header:
   teaser: "/assets/images/header/pepe.jpg"
 ---
 
-Câu chuyện về đăng ký và phỏng BS-MS
+Câu chuyện về đăng ký và phỏng vấn BS-MS :))
 
 ## Động lực nghiên cứu khoa học
 
@@ -89,7 +89,7 @@ Lúc này, mình như một người đã chết ấy, kiểu hết hy vọng r�
 
 ## Kết luận và định hướng tương lai
 
-Và thế câu chuyện từ vô vọng đến hy vọng rồi lại vô vọng và đến cuối cùng, là một happy sub-ending (chưa phải là ending, còn lâu lắm :v) của mình đã hết, với một kết quả ngoài sức tưởng tượng của mình. Có lẽ đây là bàn đập trên con đường của mình, để mình có thể tiến xa hơn nữa, không được từ bỏ hy vọng, miễn còn 0.001%, vẫn phải thử, biết đâu những gì bản thân nổ lực sẽ là những thành quả trong tương lai. 
+Và thế câu chuyện từ vô vọng đến hy vọng rồi lại vô vọng và đến cuối cùng, là một happy sub-ending (chưa phải là ending, còn lâu lắm :v) của mình đã hết, với một kết quả ngoài sức tưởng tượng của mình. Có lẽ đây là bàn đập trên con đường của mình, để mình có thể tiến xa hơn nữa, không được từ bỏ hy vọng, miễn còn 0.001%, vẫn phải thử, biết đâu những gì bản thân nổ lực sẽ là những thành quả trong tương lai.
 
 Tây Ninh, 21/08/2021
 
