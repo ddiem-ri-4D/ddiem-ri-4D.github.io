@@ -50,58 +50,31 @@ c) Github Repositories
 
 ## Common categories in Knowledge Graph
 
-### Knowledge Graph Construction
+- Knowledge Graph Construction: The problem aim to build Knowledge Graph, contain some topic such as: Domain Discovery, Named Entity Recognition, Web Information Extraction, Relation Extraction, Nontraditional Information Extraction
 
-### Knowledge Representation and Modeling
+- Knowledge Representation and Modeling: Because you can't put all Knowledge Graph into a pipline, it's too large to processing. We should represent it by some techniques and model it in order to use Statistical Representation Learning (SRL) or Deep Learning to learn from data.
 
-### Knowledge Extraction
+- Knowledge Extraction
 
-1) Information extraction
+  - Information extraction: IE is an unavoidable task in a broader KG construction (KGC) pipeline. Conceptually, IE can be defined simply as a class of algorithmic techniques to extract relevant information from raw data [Knowledge Graph - Mayank Kejriwal]
+  - Entity recognition: IE problem in the NLP community called Namely Entity Recognition (NER) -  Entity Recognition, is the task of identifying the instances of a predefined set of concepts in a specific domain, ignoring other irrelevant information, where the input consists of a corpus of texts together with a clearly specified information need.
+  - Relation extraction: relation extraction (RE), is the problem of detecting and classifying relationships between entities extracted from the text and involves its own set of challenges, being a significantly more difficult problem than NER [Knowledge Graph - Mayank Kejriwal]
+  - Event extraction
 
-2) Entity recognition
+- Knowledge Fusion
+- Knowledge Graph Embedding
 
-3) Relation extraction
+Knowledge Graph Completion problem is a hot topic in Knowledge Graph Research. In KGs, each edge is represented as a fact triple of the form (head entity, relation, tail entity), something head entity is called subject and tail entity is called object, but in this way it makes KGs hard to manipulate. Knowledge Graph Embedding is one of many approaches that tackle this issue and recently gained massive attention. The key idea is to embed components of a KG including entities and relations into continuous vector spaces, so as to simplify the manipulation while preserving the inherent structure of the KG.
 
-4) Event extraction
+- Knowledge reasoning/knowledge mining
+- Entity link
+- Knowledge storage/knowledge query
+- Human-computer interaction
 
-### Knowledge Fusion
+## Presentation Learning on Graph
 
-### Knowledge Graph Embedding
+### Graph Neural Networks
 
-1) Surveys
+### Graph Embedding
 
-2) Basic Models
-
-3) Translation-based Models
-
-4) Translation-based Models with translation requirements relaxing
-
-5) Translation-based Models using Gaussian Distribution
-
-6) Rotation-based Models
-
-7) Semantic Matching Models using Matrix/ Tensor Factorization
-
-8) Semantic Matching Models using Neural Networks
-
-9) Multi-source Information Fusion Models: Enity Type
-
-10) Multi-source Information Fusion Models: Relation Paths
-
-11) Multi-source Information Fusion Models: Text Descriptions
-
-12) Multi-source Information Fusion Models: Logical Rules
-
-13) Multi-source Information Fusion Models: Entity Attribute
-
-14) Multi-source Information Fusion Models: Temporal Information
-
-15) Multi-source Information Fusion Models Graph Structure
-
-### Knowledge reasoning/knowledge mining
-
-### Entity link
-
-### Knowledge storage/knowledge query
-
-### Human-computer interaction
+## Graph Mining
