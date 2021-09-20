@@ -82,6 +82,7 @@ Về Thị giác máy tính (Computer Vision) là một lĩnh vực bao gồm c�
 
 ### Kỹ thuật phân đoạn ảnh với Attention Map
 
+
 ## References
 
 [1] Digital Image processing, Gonzalez Rafael C. , Woods Richard E. , Eddins Steven L., Gatesmark , 2008

@@ -99,7 +99,7 @@ $$
 Ma trận tương quan quần thể (Population correlation matrix)
 
 $$
-\mathbf{P} =
+\mathbf{R} =
 \begin{bmatrix}
 1 & \rho_{12} & ... & \rho_{1p} \\
 \rho_{21} & 1 & ... & \rho_{2p} \\

@@ -54,13 +54,13 @@ toc: true
 - Nghịch đảo
 - Giải tích ma trận
 
-### Dữ liệu, ma trận hiệp phương sai, ma trận tương quan
+### [Dữ liệu, ma trận hiệp phương sai, ma trận tương quan](/content/msa/data_cov_cor)
 
-### Phân phối chuẩn đa biến
+### [Phân phối chuẩn đa biến](/content/msa/norm)
 
-### Suy diễn về vector trung bình
-
-### So sánh những trung bình đa biến
+### Suy luận về vector trung bình
+- [Single vector]( /content/msa/infer_single_mean_vector)
+- [Multiple vector]( /content/msa/infer_multiple_mean_vectors)
 
 ### Hồi quy tuyến tính đa biến - Linear Regression
 
@@ -100,7 +100,7 @@ toc: true
 - [Classification trees](/content/msa/classification/classification-tree)
 - [Support Vector Machines](/content/msa/classification/svm)
 
-### Gom nhóm - Clustering
+### [Gom nhóm - Clustering](/content/msa/clutering/clustering)
 
 - Similarity vs Dissimilarity
 - Hierarchical Clustering

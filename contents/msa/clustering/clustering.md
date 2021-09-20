@@ -6,7 +6,7 @@ author_profile: true
 toc: true
 comments: True
 ---
-Phần trình bày về phương pháp gom nhóm - FClustering Methods
+Phần trình bày về phương pháp gom nhóm - Clustering Methods
 
 ## 1) Động lực nghiên cứu khoa học
 
