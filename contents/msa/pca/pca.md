@@ -247,7 +247,7 @@ $$
 
 **Tính chất của PCA**
 
-$Y_1, ..., Y_p$ có cùng tổ phương sai như $X_1, ..., X_p$
+$Y_1, ..., Y_p$ có cùng tổng phương sai như $X_1, ..., X_p$
 
 $$
 \sum_{j=1}^{p}\text{Var}(X_j) = \text{tr}(\mathbf{\Sigma}) = \text{tr}(\mathbf{V\Lambda V'}) = \text{tr}(\mathbf{\Lambda}) = \sum_{j=1}^\text{Var}(Y_j)
