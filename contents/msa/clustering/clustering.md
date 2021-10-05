@@ -108,6 +108,83 @@ $$
 
 ## 3) Phương pháp
 
+Các phương pháp gom nhóm dữ liệu được chia thành: gom nhóm không có cấu
+trúc (Non-Hierarchical Clustering Methods), gom nhóm có cấu trúc (Hierarchical
+Clustering Methods) và gom nhóm theo mô hình thống kê (Clustering Based on
+Statistical Models)
+
 ### Hierarchical Clustering
 
+Phương pháp gom nhóm có cấu trúc (Hierarchical Clustering Methods) có hai hướng tiếp cận chính
+
+- Gom nhóm cấu trúc kết tụ (Agglomerative Hierarchical Clustering): Bắt đầu với N cluster (mỗi đối tượng là một cluster riêng biệt), sau đó gọp những đối tượng tương đồng với nhau lại, cứ lặp lại như thế cho toàn bộ đối tượng cho tất cả đều cùng thuộc cluster
+
+- Gom nhóm cấu trúc phân chia (Divisive Hierarchical Clustering): Bắt đầu với một cluster, tất cả các đối tượng đều thuộc cluster này, sau đó phân chia những đối tượng tách biệt nhau nhất, cứ lặp lại như thế cho toàn bộ đối tượng cho tất cả đều cùng thuộc cluster của chúng
+
+Đầu vào cho hierarchical clustering là một dissimilarity matrix có kích thước $N \times N$
+
+$$
+\mathbf{D} =
+\begin{pmatrix}
+d_{11} & d_{12} & ... & d_{1N}\\
+d_{21} & d_{22} & ... & d_{2N}\\
+... & ... & ... & ...\\
+d_{N1} & d_{N2} & ... & d_{NN}\\
+\end{pmatrix}
+$$
+
+Trong đó $d_{ij} = d(X_i, X_j)$ là khoảng cách giữa hai đối tượng $X_i$ và $X_j$
+
+Gọi hai cluster như sau, $$C_X = \{X_1, ..., X_m\}$$, $$C_Y = \{Y_1, ..., Y_n\}$$
+
+- $X_i$ là đối tượng thứ $i$ trong cluster $C_X$, với $i = 1, ...m$
+- $Y_j$ là đối tượng thứ $j$ trong cluster $C_Y$, với $i = j, ...n$
+
+Để định lượng khoảng cách giữa hai cluster, ta có thể dùng
+
+- Liên kết đơn (Single Linkage): khoảng cách nhỏ nhất (lân cận gần nhất)
+
+$$
+d(C_X, C_Y) = \text{min}_{i, j}d(X_i, Y_j)
+$$
+
+- Liên kết đầy đủ (Complete Linkage): khoảng cách lớn nhất (lân cận xa nhất)
+
+$$
+d(C_X, C_Y) = \text{max}_{i, j}d(X_i, Y_j)
+$$
+
+- Liên kết trung bình (Average Linkage)
+
+$$
+d(C_X, C_Y) = \frac{1}{mn}\sum_{i=1}^m\sum_{j=1}^nd(X_i, Y_j)
+$$
+
+
 ### Non-Hierarchical Clustering
+
+Gom nhóm không có cấu trúc (Non-Hierarchical Clustering Methods) chia một tập gồm $N$ đối tượng thành $K$ nhóm tách biệt dựa trên một vài khoảng cách (hoặc dissimilarity)
+
+Số lượng cluster $K$ có thể được biết trước hoặc có thể được ước lượng
+
+Phương pháp K-Means
+
+- Mục đích của phương pháp K-means là để phân dữ liệu đầu vào thành $k$ nhóm làm
+sao cho tổng bình phương trong mỗi nhóm được tối thiểu hóa sử dụng hàm mục
+tiêu
+
+$$
+J = \sum_{j=1}^k\sum_{x_i \in C_i}||x_i - c_i||^2
+$$
+
+Các bước của thuật toán
+
+Bước 1: Chọn k điểm một cách ngẫu nhiên trong các điểm dữ liệu đầu vào làm tâm
+của k nhóm
+
+Bước 2: Gán các giá trị đầu vào vào các nhóm có tâm gần với mỗi điểm nhất sử
+dụng hàm mục tiêu
+
+Bước 3: Cập nhật lại các tâm bằng cách tính tổng trung bình các điểm đã được gán
+
+Bước 4: Lặp lại 2, 3 cho đến khi không có điểm nào thay đổi

@@ -516,3 +516,9 @@ $$
 $$MSE = \frac{1}{10}\sum_{i=1}^{10}(X_i - \hat{X}_i)^2 = 0.67493$$
 
 ## Tài liệu tham khảo
+
+[1] Applied Multivariate Statistical Analysis, Richard A. Johnson, Dean W. Wichern, Chapter 08
+[2] https://www.youtube.com/watch?v=HHmF7-wXxoM&list=PL67CJL04EcjOKnnZUgKehE0bXhOGS-I4u
+[3] https://phvu.net/2011/10/05/pca-principal-component-analysis/
+[4] PCA: Numerical Example, Rao Vemuri
+(http://www.math.hcmus.edu.vn/~ntlanh/AdvancedML/Slides/ML12_1EigenValueCalculation.pdf )
