@@ -115,6 +115,26 @@ là ước lượng triển vọng cực đại (Maximum likelihood estimate) c�
 
 ## Chuẩn hai biến (Bivariate normal)
 
+### Dạng phân phối
+
+### Tính toán xác suất
+
+### Các phép biến đổi Affine
+
+### Ước lượng tham số
+
 ## Chuẩn đa biến (Multivariate normal)
 
+### Dạng phân phối
+
+### Tính toán xác suất
+
+### Các phép biến đổi Affine
+
+### Ước lượng tham số
+
 ## Phân phối mẫu (Sampling distributions)
+
+### Trường hợp đơn biến
+
+### Trường hợp đa biến

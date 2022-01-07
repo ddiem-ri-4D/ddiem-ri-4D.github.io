@@ -32,14 +32,13 @@ toc: true
     - Validation
     - Support Vector Machine
 
-- Máy học hiện đại: Artificial Neural Networks
-- Máy học hiện đại: Deep Neural Networks
-- Máy học hiện đại: Convolutional Neural Networks
-- Máy học hiện đại: Recurrent Neural Networks
-- Máy học hiện đại: Attention Mechanisms
-- Máy học hiện đại: Deep Generative Models
-
-- Lý thuyết máy học: Computational Graph - Đồ thị tính toán
+- Máy học hiện đại: [Artificial Neural Networks]( /intro2ml/modern-ml-artificial-neural-networks){:target="_blank"}
+- Máy học hiện đại: [Deep Neural Networks](/intro2ml/modern-ml-deep-neural-networks){:target="_blank"}
+- Máy học hiện đại: [Convolutional Neural Networks](/intro2ml/modern-ml-convolutional-neural-networks){:target="_blank"}
+- Máy học hiện đại: [Recurrent Neural Networks](/intro2ml/modern-ml-recurrent-neural-networks){:target="_blank"}
+- Máy học hiện đại: [Attention Mechanism](/intro2ml/modern-ml-attention-mechanism){:target="_blank"}
+- Máy học hiện đại: [Deep Generative Models]( /intro2ml/modern-ml-deep-generative-models){:target="_blank"}
+- Lý thuyết máy học: [Computational Graph - Đồ thị tính toán](/intro2ml/theorical-ml-computational-graph)
 
 ## Note of An Introduction to Statistical Learning with Applications in R
 

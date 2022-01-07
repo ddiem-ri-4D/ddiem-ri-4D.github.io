@@ -35,8 +35,8 @@ $$
 $$
 
 Trong đó:
-- $\mathbf{Y = [y_1, y_2, ..., y_m]} \in \mathbb{R}^{n \times m}$$ có kích thước $n \times m$
-    - $\mathbf{y_k} = (y_{1k}, y_{2k}, ..., y_{nk})' \in \mathbb{R}^{n}$ là vector giá trị dự đoán thứ k 
+- $\mathbf{Y = [y_1, y_2, ..., y_m]} \in \mathbb{R}^{n \times m}$ có kích thước $n \times m$
+    - $\mathbf{y_k} = (y_{1k}, y_{2k}, ..., y_{nk})' \in \mathbb{R}^{n}$ là vector giá trị dự đoán thứ k
 - $\mathbf{X = [1_n, x_1, x_2, ..., x_p]} \in \mathbb{R}^{n \times (p+1)}$
     - $1_n$ là vector một có kích thước $n \times 1$
     - $x_j = (x_{1j}, x_{2j}, ..., x_{nj})' \in \mathbb{R}^{n}$ vector bộ dự đoán thứ j có kích thước $n \times 1$
@@ -48,6 +48,24 @@ Trong đó:
 ## 3) Phương pháp
 
 ### 3.1 Ước lượng tham số mô hình bằng phương pháp bình phương tối tiểu (Ordinary Least Squares)
+
+$$\underset{\mathbf{B} \in \mathbb{R}^{(p+1) \times m}}{\text{min}} ||\mathbf{Y -XB}||^2 = \underset{\mathbf{B} \in \mathbb{R}^{(p+1) \times m}}{\text{min}} \sum_{i=1}^{n}\sum_{k=1}^m\left(y_{ik} - b_{0k} - \sum_{j=1}^pb_{jk}x_{ij}\right)^2$$
+
+Trong đó: $$\|\cdot\|$$ là Frobenius norm
+
+$$
+\text{OLS}(\mathbf{B}) = ||\mathbf{Y -XB}||^2 = \text{tr}(\mathbf{Y'Y}) - 2\text{tr}(\mathbf{Y'XB}) + \text{tr}(\mathbf{B'X'XB})
+$$
+
+$$
+\frac{\partial \text{OLS}(\mathbf{B})}{\partial \mathbf{B}} = -2\mathbf{X'Y} + 2\mathbf{X'XB}
+$$
+
+OLS Solution:
+
+$$
+\hat{\mathbf{B}} = \mathbf{(X'X)^{-1}X'Y} \leftrightarrow \hat{\mathbf{b}}_k = \mathbf{(X'X)^{-1}X'}\mathbf{y}_k
+$$
 
 ### 3.2 Ước lượng tham số mô hình bằng phương pháp triển vọng cực đại (maximum likelihood)
 
