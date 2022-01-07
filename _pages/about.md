@@ -11,9 +11,9 @@ comments: true
 
 <p><img style="float: left;margin:5px 20px 5px 1px" src="{{site.baseurl}}/assets/images/avt/avt.jpg" width="200px"></p>
 
-I'm currently as a student who goes by the full name is **Le Nhut Nam** (with Vietnamese format). I have a knowledge of Recognition, Machine Learning and Multivariate Statistical Analysis. Currently, I'm focusing on research **Graph Theory**, **Graph Neural Networks** and **Complex Networks**. Specially, my research is study about modelling complex relations and interactions in multi-relational data, graph structures and networks; methods to representation data (ie., Representation Learning on Graphs). My goal for my future is become Computer Scientist, get Master Degree in Computer Science, and for long term plan, get PhD in Computer Science.
+I'm currently a student who goes by the full name is **Le Nhut Nam** (with Vietnamese format). I have knowledge of Recognition, Machine Learning, and Multivariate Statistical Analysis. Currently, I'm focusing on research **Graph Theory**, **Graph Neural Networks** and **Complex Networks**. Especially, my research study is about modeling complex relations and interactions in multi-relational data, graph structures, and networks; methods to represent data (ie., Representation Learning on Graphs). My goal for my future is to become Computer Scientist, get a Master's Degree in Computer Science, and for the long term plan, get Ph.D. in Computer Science.
 
-This is a site which has a template fork from minimal mistake, just a static Github pages that post something about me, my work and some blog-post (written in English or Vietnamese depend on my opinion). If you guy interested about me, please look at my Linkedin profile and my [CV here](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/nhutnamhcmus/resume/main/resume.pdf){:target="_blank"}
+This is a site that has a template fork from minimal mistake, just static Github pages that post something about me, my work, and some blog-post (written in English or Vietnamese depending on my opinion). If you guy interested in me, please look at my Linkedin profile and my [CV here](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/nhutnamhcmus/resume/main/resume.pdf){:target="_blank"}
 
 
 ## Elsewhere on the web, you can find me on
