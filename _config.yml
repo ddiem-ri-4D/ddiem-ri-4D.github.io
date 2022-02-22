@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "vn-VN"
-title                    : "Nhut-Nam Le"
+title                    : "Phạm Nguyễn Mỹ Diễm"
 title_separator          : "-"
-subtitle                 : Computer Science Blogpost # site tagline that appears below site title in masthead
-name                     : "Nhut-Nam Le"
+subtitle                 : Information Technology Blogpost # site tagline that appears below site title in masthead
+name                     : "Phạm Nguyễn Mỹ Diễm"
 description              : "Maybe I'm just a bizarre little person who walks back and forth. -- Terry A. Davis."
-url                      : "https://nhutnamhcmus.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://ddiem-ri-4D.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "nhutnamhcmus/nhutnamhcmus.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ddiem-ri-4D/ddiem-ri-4D.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -101,28 +101,22 @@ analytics:
 
 # Site Author
 author:
-  name             : "Nhut-Nam Le"
-  avatar           : "/assets/images/avt/avt.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Computer Science Student. C/C++ Enthusiast. Interested in Computer Vision. Do Mathematics for fun."
+  name             : "Phạm Nguyễn Mỹ Diễm"
+  avatar           : "/assets/images/avt/avt.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Do Mathematics for fun."
   links:
     - label: "Email"
       icon: "far fa-envelope"
-      url: "lenam.fithcmus@gmail.com"
-    - label: "Google Scholar"
-      icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=Vw1yV3YAAAAJ&hl=en"
-    - label: "ORCID"
-      icon: "fab fa-orcid"
-      url: "https://orcid.org/0000-0002-2273-5089"
+      url: "mydiem1802@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/nhutnamhcmus"
+      url: "https://github.com/ddiem-ri-4D"
     - label: "Linkedin"
       icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/lenhutnam298/"
+      url: "https://www.linkedin.com/in/nguyenmydiempham/"
     - label: "Twitter"
       icon: "fab fa-twitter-square"
-      url: "https://twitter.com/Namlee298"
+      url: "https://twitter.com/diemkiri"
 
 
 # Site Footer
