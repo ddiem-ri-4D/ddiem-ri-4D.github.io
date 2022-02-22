@@ -16,21 +16,21 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "vn-VN"
-title                    : "Phạm Nguyễn Mỹ Diễm"
+title                    : "Nhut-Nam Le"
 title_separator          : "-"
-subtitle                 : Information Technology Blogpost # site tagline that appears below site title in masthead
-name                     : "Phạm Nguyễn Mỹ Diễm"
+subtitle                 : Computer Science Blogpost # site tagline that appears below site title in masthead
+name                     : "Nhut-Nam Le"
 description              : "Maybe I'm just a bizarre little person who walks back and forth. -- Terry A. Davis."
-url                      : "https://ddiem-ri-4D.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://nhutnamhcmus.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "ddiem-ri-4D/ddiem-ri-4D.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "nhutnamhcmus/nhutnamhcmus.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -73,9 +73,8 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  :
 yandex_site_verification :
-baidu_site_verification  :
+naver_site_verification  :
 
 # Social Sharing
 twitter:
@@ -102,22 +101,29 @@ analytics:
 
 # Site Author
 author:
-  name             : "Phạm Nguyễn Mỹ Diễm"
-  avatar           : "/assets/images/avt/avt.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Information Technology Blogpost"
+  name             : "Nhut-Nam Le"
+  avatar           : "/assets/images/avt/avt.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Computer Science Student. C/C++ Enthusiast. Interested in Computer Vision. Do Mathematics for fun."
   links:
-   - label: "Email"
+    - label: "Email"
       icon: "far fa-envelope"
-      url: "mydiem1802@gmail.com"
+      url: "lenam.fithcmus@gmail.com"
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=Vw1yV3YAAAAJ&hl=en"
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0002-2273-5089"
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/ddiem-ri-4D"
+      url: "https://github.com/nhutnamhcmus"
     - label: "Linkedin"
       icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/nguyenmydiempham/"
+      url: "https://www.linkedin.com/in/lenhutnam298/"
     - label: "Twitter"
       icon: "fab fa-twitter-square"
-      url: "https://twitter.com/diemkiri"
+      url: "https://twitter.com/Namlee298"
+
 
 # Site Footer
 footer:
@@ -126,7 +132,7 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon: "fab fa-orcid"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -277,6 +283,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
