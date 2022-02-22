@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Phạm Nguyễn Mỹ Diễm"
-  avatar           : "/assets/images/avt/avt.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avt/avt.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Information Technology Blogpost"
   links:
    - label: "Email"
